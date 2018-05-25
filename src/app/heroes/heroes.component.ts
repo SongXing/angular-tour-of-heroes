@@ -42,7 +42,7 @@ export class HeroesComponent implements OnInit {
   getHeroes(): void {
     // this.heroes = this.heroService.getHeroes(); // 此处使用的是同步方式
     /* 使用注册服务后，使用异步方式 */
-    this.heroService.getHeroes().subscribe(heroes => this.heroes = this.heroes);
+    this.heroService.getHeroes().subscribe(heroes => this.heroes = heroes);
   }
 
 }
